@@ -4,8 +4,9 @@ int main(int argc, char** argv)
 {
 	//while (argc > -5)
 	//	printf(argv[argc--]);
-	unsigned int x = -1;
-	char* s = argv[x];
-	printf("%s\n", s);
+	if (1)
+		if (*argv[1] & 0xc0)
+			if (argv[*argv[1]] &0xc0)
+				printf("done\n");
 	return 0;
 }
