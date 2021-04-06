@@ -6,8 +6,9 @@ int main(int argc, char** argv)
 	//	printf(argv[argc--]);
 	if (1)
 		if (argc >= 1)
-			if ((char)*argv[1] & 0xc0)
-				if ((char)*argv[(char)*argv[1]] &0xc0)
-				printf("done\n");
+			if (argv)
+				if ((char)*argv[1] & 0xc0)
+					if ((char)*argv[(char)*argv[1]] &0xc0)
+						printf("done\n");
 	return 0;
 }
